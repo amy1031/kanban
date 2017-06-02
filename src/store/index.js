@@ -153,6 +153,13 @@ export default new Vuex.Store({
         })
         .catch(handleError)
     },
+    moveTasks({ commit, dispatch }, task) {
+      api.put('tasks/'+ task._id, task)
+        .then(res => {
+          dispatch('getTasks', {boardId: task.boardId, listId: task.listId})
+        })
+        .catch(handleError)
+    },
     getComments({commit, dispatch}, {listId, boardId, taskId}) {
       api('boards/' + boardId + '/lists/' + listId + '/tasks/' + taskId + '/comments')
         .then(res => {

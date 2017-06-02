@@ -1,6 +1,7 @@
 <template>
 <div class="lists">
     <div class="col-xs-6">
+    <div class="list" droppable="true" v-on:drop.capture="createTask" ondragover="event.preventDefault()">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <div class="pull-right">
@@ -8,9 +9,10 @@
                 </div>
                 <h3 class="panel-title">{{this.listProp.name}}</h3> 
             </div>
+
             <!-- tasks -->
             <div class="panel-body">
-                <div v-for='(task, index) in this.tasks'>
+                <div v-for='(task, index) in this.tasks' :key="index" :id="index" class="tasks" draggable="true" v-on:dragstart.capture="moving">
                     <tasks :task-prop='task' :task-index="index"></tasks>
                 </div>
                 <div class="add-task">
@@ -30,6 +32,7 @@
 
             </div>
         </div>
+        </div>
     </div>
 </div>
 </template>
@@ -37,6 +40,7 @@
 
 <script>
 import Tasks from './Tasks'
+import draggable from 'vuedraggable'
 
 export default {
     name: 'lists',
@@ -69,7 +73,21 @@ export default {
     },
         editList(list) {
             this.$store.dispatch('editList', list)
-    }
+    },
+      moveTask() {
+        let i = this.tasks.indexOf(this.tasks)
+        this.tasks.splice(i, 1)
+        this.$store.dispatch('moveTasks', tasks)
+    },
+      moving(event) {
+        var task = this.tasks[event.target.id]
+        event.dataTransfer.setData('text/javascript', JSON.stringify(task))
+    },
+      createTask(event) {
+        var task = JSON.parse(event.dataTransfer.getData('text/javascript'))
+        task.listId = this.listProp._id
+        this.$store.dispatch('moveTasks', task)
+      }
     },
     components:{
         Tasks

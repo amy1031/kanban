@@ -2,7 +2,6 @@
     <div class="tasks">
       <div class="well well-sm">
         <div class="pull-right">
-               <!-- <div v-for='list in this.lists'>{{this.list.name}}</div> -->
              &nbsp; 
             <button class="delete" @click="removeTask(taskProp)">x</button>
         </div>
@@ -25,9 +24,20 @@
                 </div>
             </div>
         </div>
-
+      <!--  <div v-for='list in this.lists'>{{this.list.name}} -->
+      <!--  <form class="form-horizontal">
+            <div class="form-group">
+                <label for="select" class="col-sm-4 control-label">Move to:</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>1</option>
+                        </select>
+                    </div>
+            </div>
+        </form>
+    </div> -->
     </div>
-    </div>
+</div>
 </template>
 
 

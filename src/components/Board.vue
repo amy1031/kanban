@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-8">
       <h4>Create a new list</h4>
         <div class="add-list">
         <form @submit.prevent="createList">
