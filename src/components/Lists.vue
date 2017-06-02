@@ -1,7 +1,7 @@
 <template>
 <div class="lists">
     <div class="col-xs-6">
-    <div class="list" droppable="true" v-on:drop.capture="createTask" ondragover="event.preventDefault()">
+    <div class="list" droppable="true" v-on:drop.capture="createTasks" ondragover="event.preventDefault()">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <div class="pull-right">
@@ -83,7 +83,7 @@ export default {
         var task = this.tasks[event.target.id]
         event.dataTransfer.setData('text/javascript', JSON.stringify(task))
     },
-      createTask(event) {
+      createTasks(event) {
         var task = JSON.parse(event.dataTransfer.getData('text/javascript'))
         task.listId = this.listProp._id
         this.$store.dispatch('moveTasks', task)

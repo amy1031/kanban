@@ -40,7 +40,7 @@ export default {
     return {
       name: '',
       description: '',
-      creatorId: '592366de64ef43aeeddb09bc'
+      creatorId: this.$store.state.user._id
     }
   },
   mounted(){
