@@ -1,0 +1,77 @@
+ body {
+      background-color: #E4FFAB;
+    }
+
+    h1 {
+      color: #9a9a9a;
+      font-size: 70px;
+      font-weight: bold;
+      font-family: Pacifico;
+    }
+
+    h2 {
+      color: #9a9a9a;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: helvetica;
+    }
+
+    h3 {
+      color: #9a9a9a;
+      font-size: 20px;
+      font-family: helvetica;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: 0 none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .btn.round {
+      border-radius: 24px;
+    }
+
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus {
+      outline: 0 none;
+    }
+
+    .btn-primary {
+      background: #B576D1;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open>.dropdown-toggle.btn-primary {
+      background: #9B5BB8;
+    }
+
+    .btn-primary:active,
+    .btn-primary.active {
+      background: #007299;
+      box-shadow: none;
+    }
+
+    .register {
+      background: #71328D;
+      color: #ffffff;
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .nav-pills {
+      padding: 30px;
+    }

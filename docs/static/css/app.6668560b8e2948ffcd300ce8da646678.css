@@ -1,0 +1,445 @@
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+  background-color: #E4FFAB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h4[data-v-60b1dd3e] {
+      color: #9a9a9a;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: helvetica;
+}
+a[data-v-60b1dd3e] {
+    color: #808080;
+}
+p[data-v-60b1dd3e] {
+    padding-top: 10px;
+}
+
+#register[data-v-fd9f004a] {
+    background-color: #E4FFAB;
+}
+h4[data-v-fd9f004a] {
+      color: #9a9a9a;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: helvetica;
+}
+.btn-primary[data-v-fd9f004a] {
+      background: #71328D;
+      color: #ffffff;
+}
+a[data-v-fd9f004a] {
+    color: #808080;
+}
+p[data-v-fd9f004a] {
+    padding-top: 10px;
+    color: #505050;
+}
+
+.capitalize[data-v-0c6e3af6] {
+    text-transform: capitalize;
+}
+h1[data-v-0c6e3af6] {
+  font-family: helvetica;
+  font-size: 30px;
+}
+h2[data-v-0c6e3af6] {
+  font-family: helvetica;
+  font-size: 20px;
+  color: #707070;
+}
+h3[data-v-0c6e3af6] {
+  font-family: helvetica;
+  font-size: 18px;
+  color: #707070;
+}
+a[data-v-0c6e3af6] {
+  color: #606060;
+  font-size: 14px;
+  font-weight: bold;
+  color: #71328D;
+}
+p.logout[data-v-0c6e3af6] {
+  margin-top: 25px;
+}
+button.board[data-v-0c6e3af6] {
+  font-size: 25px;
+  color: #9B5BB8;
+  font-weight: bold;
+  font-family: Poppins;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  transition-duration: 0.4s;
+}
+button.board[data-v-0c6e3af6]:hover{
+  background-color: #9B5BB8;
+  color: #fff;
+}
+button.logout[data-v-0c6e3af6] {
+  font-size: 16px;
+  color: #9B5BB8;
+  font-weight: bold;
+  font-family: Poppins;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  padding: 7px;
+  margin-bottom: 5px;
+  transition-duration: 0.4s;
+}
+button.logout[data-v-0c6e3af6]:hover{
+  background-color: #9a9a9a;
+  color: #fff;
+}
+hr[data-v-0c6e3af6] {
+  	border-top: 3px double #8c8b8b;
+}
+
+h2[data-v-5337eb44] {
+  color: #71328D;
+}
+button.delete[data-v-5337eb44] {
+  background-color: #ff5050;
+  border: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  border-radius: 5px;
+  border: 0px;
+  padding: 7px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  transition-duration: 0.4s;
+}
+button.delete[data-v-5337eb44]:hover{
+  background-color: #f61313;
+  color: #fff;
+}
+button.boards[data-v-5337eb44] {
+  background-color: #9B5BB8;
+  border: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  border-radius: 5px;
+  border: 0px;
+  padding: 7px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  transition-duration: 0.4s;
+}
+button.boards[data-v-5337eb44]:hover{
+  background-color: #71328D;
+  color: #fff;
+}
+.description[data-v-5337eb44] {
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+h3[data-v-2392e0e6] {
+    color: #B576D1;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+.task[data-v-2392e0e6] {
+    border: 0px;
+    color: #fff;
+    background-color: #B576D1;
+    font-weight: bold;
+    font-family: helvetica;
+    border-radius: 5px;
+    border: 0px;
+    padding: 7px;
+    margin-bottom: 5px;
+    transition-duration: 0.4s;
+}
+.task[data-v-2392e0e6]:hover{
+  background-color: #b4db64;
+  color: #fff;
+}
+.delete[data-v-2392e0e6] {
+    background-color: #afb0af;
+    border: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Poppins;
+    border-radius: 5px;
+    border: 0px;
+    padding: 7px 10px;
+    transition-duration: 0.4s;
+}
+span[data-v-2392e0e6] {
+    color: #9a9a9a;
+}
+span[data-v-2392e0e6]:hover {
+    color: #9a9a9a;
+    text-decoration: underline;
+}
+.modal-mask[data-v-2392e0e6] {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+.modal-wrapper[data-v-2392e0e6] {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal-container[data-v-2392e0e6] {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.modal-header h3[data-v-2392e0e6] {
+  margin-top: 0;
+  color: #42b983;
+}
+.modal-body[data-v-2392e0e6] {
+  margin: 20px 0;
+}
+.modal-default-button[data-v-2392e0e6] {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+.modal-enter[data-v-2392e0e6] {
+  opacity: 0;
+}
+.modal-leave-active[data-v-2392e0e6] {
+  opacity: 0;
+}
+.modal-enter .modal-container[data-v-2392e0e6],
+.modal-leave-active .modal-container[data-v-2392e0e6] {
+  transform: scale(1.1);
+}
+
+
+.delete[data-v-41f50306] {
+    background-color: #afb0af;
+    border: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Poppins;
+    border-radius: 5px;
+    border: 0px;
+    padding: 3px 5px;
+    transition-duration: 0.4s;
+}
+.description[data-v-41f50306] {
+    padding-left: 10px;
+}
+h4[data-v-41f50306] {
+    padding-bottom: 5px;
+}
+h5[data-v-41f50306] {
+    margin-top: 0px;
+    padding-bottom: 5px;
+}
+h6[data-v-41f50306] {
+    padding-top: 10px;
+}
+button.add[data-v-41f50306] {
+  background-color: #9B5BB8;
+  border: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  border-radius: 5px;
+  border: 0px;
+  padding: 6px;
+  margin-bottom: 5px;
+  transition-duration: 0.4s;
+}
+
+
+ul li[data-v-17721eac] {
+    line-height: 8px;
+}
+.delete[data-v-17721eac] {
+    padding: 3px;
+    border: 1px solid #fff;
+    background-color: #ff5050;
+    color: #fff;
+    font-weight: bold;
+}
+
+#home[data-v-7958d817] {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+h4[data-v-7958d817] {
+      color: #9a9a9a;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: helvetica;
+}
+.btn[data-v-7958d817] {
+      padding: 14px 24px;
+      border: 0 none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+}
+.btn[data-v-7958d817]:focus,
+    .btn[data-v-7958d817]:active:focus,
+    .btn.active[data-v-7958d817]:focus {
+      outline: 0 none;
+}
+.btn-primary[data-v-7958d817] {
+      background: #B576D1;
+      color: #ffffff;
+}
+.btn-primary[data-v-7958d817]:hover,
+    .btn-primary[data-v-7958d817]:focus,
+    .btn-primary[data-v-7958d817]:active,
+    .btn-primary.active[data-v-7958d817],
+    .open>.dropdown-toggle.btn-primary[data-v-7958d817] {
+      background: #9B5BB8;
+}
+.btn-primary[data-v-7958d817]:active,
+    .btn-primary.active[data-v-7958d817] {
+      background: #007299;
+      box-shadow: none;
+}
+.register[data-v-7958d817] {
+      background: #71328D;
+      color: #ffffff;
+}
+a[data-v-7958d817] {
+      color: #ffffff;
+}
+a[data-v-7958d817]:hover {
+      text-decoration: none;
+}
+ body {
+      background-color: #E4FFAB;
+    }
+
+    h1 {
+      color: #9a9a9a;
+      font-size: 70px;
+      font-weight: bold;
+      font-family: Pacifico;
+    }
+
+    h2 {
+      color: #9a9a9a;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: helvetica;
+    }
+
+    h3 {
+      color: #9a9a9a;
+      font-size: 20px;
+      font-family: helvetica;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: 0 none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .btn.round {
+      border-radius: 24px;
+    }
+
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus {
+      outline: 0 none;
+    }
+
+    .btn-primary {
+      background: #B576D1;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open>.dropdown-toggle.btn-primary {
+      background: #9B5BB8;
+    }
+
+    .btn-primary:active,
+    .btn-primary.active {
+      background: #007299;
+      box-shadow: none;
+    }
+
+    .register {
+      background: #71328D;
+      color: #ffffff;
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .nav-pills {
+      padding: 30px;
+    }
+/*# sourceMappingURL=app.6668560b8e2948ffcd300ce8da646678.css.map*/
