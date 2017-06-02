@@ -61,7 +61,7 @@ export default new Vuex.Store({
   // ACTIONS ARE RESPONSIBLE FOR MANAGING ALL ASYNC REQUESTS
   actions: {
     getBoards({commit, dispatch}) {
-      api('boards')
+      api('userboards')
         .then(res => {
           commit('setBoards', res.data.data)
           //state.boards = res.data.data
@@ -157,6 +157,7 @@ export default new Vuex.Store({
       api.put('tasks/'+ task._id, task)
         .then(res => {
           dispatch('getTasks', {boardId: task.boardId, listId: task.listId})
+        //  dispatch('getTasks', )
         })
         .catch(handleError)
     },

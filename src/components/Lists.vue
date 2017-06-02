@@ -12,7 +12,7 @@
 
             <!-- tasks -->
             <div class="panel-body">
-                <div v-for='(task, index) in this.tasks' :key="index" :id="index" class="tasks" draggable="true" v-on:dragstart.capture="moving">
+                <div v-for='(task, index) in this.tasks' :key="index" :id="index" class="tasks" draggable="true" v-on:dragstart.capture="moving" v-on:drop.capture="removeTask">
                     <tasks :task-prop='task' :task-index="index"></tasks>
                 </div>
                 <div class="add-task">
@@ -74,10 +74,12 @@ export default {
         editList(list) {
             this.$store.dispatch('editList', list)
     },
-      moveTask() {
-        let i = this.tasks.indexOf(this.tasks)
-        this.tasks.splice(i, 1)
-        this.$store.dispatch('moveTasks', tasks)
+      removeTask(event) {
+    //     let i = this.tasks.indexOf(this.tasks)
+            debugger
+            var task = this.tasks[event.target.id]
+      //   this.$store.tasks.splice(index, 1)
+        this.$store.dispatch('removeTask', task)
     },
       moving(event) {
         var task = this.tasks[event.target.id]
@@ -85,6 +87,7 @@ export default {
     },
       createTasks(event) {
         var task = JSON.parse(event.dataTransfer.getData('text/javascript'))
+       // this.$store.dispatch('removeTask', task)
         task.listId = this.listProp._id
         this.$store.dispatch('moveTasks', task)
       }
