@@ -75,11 +75,9 @@ export default {
             this.$store.dispatch('editList', list)
     },
       removeTask(event) {
-    //     let i = this.tasks.indexOf(this.tasks)
-            debugger
+           // debugger
             var task = this.tasks[event.target.id]
-      //   this.$store.tasks.splice(index, 1)
-        this.$store.dispatch('removeTask', task)
+            this.$store.dispatch('removeTask', task)
     },
       moving(event) {
         var task = this.tasks[event.target.id]
@@ -87,7 +85,6 @@ export default {
     },
       createTasks(event) {
         var task = JSON.parse(event.dataTransfer.getData('text/javascript'))
-       // this.$store.dispatch('removeTask', task)
         task.listId = this.listProp._id
         this.$store.dispatch('moveTasks', task)
       }

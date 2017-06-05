@@ -157,7 +157,6 @@ export default new Vuex.Store({
       api.put('tasks/'+ task._id, task)
         .then(res => {
           dispatch('getTasks', {boardId: task.boardId, listId: task.listId})
-        //  dispatch('getTasks', )
         })
         .catch(handleError)
     },
